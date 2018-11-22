@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JokeHouse</string>
+
+    <string name="get_intent_joke">get intent joke</string>
+
+    <string name="the_joke">theJoke</string>
+    <string name="moo">moo</string>
+</resources>
