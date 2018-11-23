@@ -14,17 +14,16 @@ import static junit.framework.Assert.assertNotNull;
 public class AsyncTaskTest  implements TheEndpointAsyncTask.JokeDelivered
 {
     @Test
-    public String testVerifyEchoResponse() {
+    public void testVerifyEchoResponse() {
         String result = null;
         TheEndpointAsyncTask theEndpointAsyncTask = new TheEndpointAsyncTask(this);
         theEndpointAsyncTask.execute();
         try {
             result = theEndpointAsyncTask.get();
         } catch (Exception e) {
-            return "";
+            e.printStackTrace();
         }
         assertNotNull(result);
-        return result;
     }
     @Override
     public void onJokeDelivered(String joke) {
@@ -32,3 +31,4 @@ public class AsyncTaskTest  implements TheEndpointAsyncTask.JokeDelivered
     }
 
 }
+//<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
