@@ -47,7 +47,7 @@ public class TheEndpointAsyncTask extends AsyncTask<Context, Void, String>
             return myApi.sayHi ("Hi").execute ().getData ();
         } catch (IOException e)
         {
-            return e.getMessage ();
+            return null;
         }
 
     }

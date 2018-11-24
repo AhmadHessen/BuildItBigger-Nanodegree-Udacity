@@ -22,7 +22,6 @@ public class AsyncTaskTest  implements TheEndpointAsyncTask.JokeDelivered
             result = theEndpointAsyncTask.get();
         } catch (Exception e) {
             e.printStackTrace();
-	    result = null;
         }
         assertNotNull(result);
     }
