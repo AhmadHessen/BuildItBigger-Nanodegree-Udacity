@@ -18,6 +18,11 @@ public class TheEndpointAsyncTask extends AsyncTask<Context, Void, String>
     private Context context;
     private JokeDelivered jokeDelivered;
 
+    public TheEndpointAsyncTask(JokeDelivered jokeDelivered)
+    {
+        this.jokeDelivered = jokeDelivered;
+    }
+
     public interface JokeDelivered
     {
         void onJokeDelivered(String joke);
